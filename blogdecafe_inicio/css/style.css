@@ -26,7 +26,7 @@ body {
 /* Globales */
 .contenedor {
     max-width: 120rem;
-    width: 90%;
+    width: 90%;  /* Esto hace que cuando es mas pequeña la imagen, no ocupa hasta el borde de la pantalla*/
     margin: 0 auto;
 }
 a {
@@ -83,6 +83,9 @@ img {
     }
 }
 
+.barra {
+    padding-top: 3rem;
+}
 @media (min-width: 768px) {
     .barra {
         display: flex;
@@ -174,4 +177,19 @@ img {
 .widget-curso__info {
     font-weight: normal;
     font-size: 2rem;
+}
+
+.footer {
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+/* Sobre Nosotros*/
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: grid;  /* divido en dos columnas del mismo ancho*/
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
 }
